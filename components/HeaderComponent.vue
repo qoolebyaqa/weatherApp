@@ -94,6 +94,9 @@ input::placeholder {
     justify-content: center;
     gap: 20px;
   }
+  .message {
+    top: 150px;
+  }
 }
 @media screen and (max-width: 380px) { 
   h1 {
