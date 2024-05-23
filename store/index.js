@@ -49,7 +49,7 @@ const store = createStore({
       const apiKey = config.public.apiKey;
       try {
         const responseLngLat = await ((await fetch(`http://api.openweathermap.org/geo/1.0/direct?q=${this.state.currentLocation.title}&appid=${apiKey}`)).json());
-        if(responseLngLat.length < 1) {
+        if(responseLngLat.length === 0) {
           commit('setError', 'Невозможно найти город, проверьте правильность ввода.');
           return;
         }

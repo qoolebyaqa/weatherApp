@@ -34,7 +34,8 @@ const currentTheme = computed(() => {
 async function handleSubmit(event) {
   if (event.keyCode === 13) {
     await store.dispatch("fetchLonLat");
-    if (currentErrorState) {
+    console.log(store.state.error)
+    if (store.state.error) {
       return;
     } else {
       await store.dispatch("fetchWeather");
