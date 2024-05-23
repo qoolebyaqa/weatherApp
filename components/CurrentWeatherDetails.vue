@@ -74,7 +74,7 @@ const precipitation = computed(() => {
   }
   @media screen and (max-width: 400px) { 
     .currentWeatherDetails {
-      padding: 20px 2px;
+      padding-left: 10px;
     }
   }
 </style>
