@@ -10,6 +10,9 @@ export default defineNuxtConfig({
     '~/plugins/vuex.js',
   ],
   ssr: true,
+  app: {
+    baseURL: '/weatherApp/'
+  },
   nitro: {
     preset: 'node-server',
   }
