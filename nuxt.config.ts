@@ -8,5 +8,9 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   plugins: [
     '~/plugins/vuex.js',
-  ]
+  ],
+  ssr: true,
+  nitro: {
+    preset: 'node-server',
+  }
 })
