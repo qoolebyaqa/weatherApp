@@ -10,7 +10,4 @@ export default defineNuxtConfig({
     '~/plugins/vuex.js',
   ],
   ssr: true,
-  nitro: {
-    preset: 'node-server',
-  }
 })
